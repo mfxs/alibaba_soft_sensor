@@ -80,3 +80,6 @@
 
 + **A novel semi-supervised pre-training strategy for deep networks and its application for quality variable prediction in industrial processes**
 > 相较于传统首先利用无标签数据预训练SAE，再利用有标签数据fine-tuning整个网络的方法，此方法在预训练阶段同时使用有标签数据和无标签数据重构过程变量和质量变量，使得预训练阶段所提取的特征能够和质量变量密切相关，从而提升半监督软测量的精度。
+
++ **Mixture Semisupervised Principal Component Regression Model and Soft Sensor Application**
+> 传统的半监督概率PCR方法同时考虑有标签样本输入输出的联合似然和无标签样本输入的似然，通过最大化两部分似然函数之和对模型参数进行求解，因而能够同时使用有标签数据和无标签数据。混合半监督概率PCR在此基础上引入多个PCR模型，将多个PCR模型的加权输出作为结果，所采用的损失函数和之前一样，采用EM算法进行求解，适用于非线性、多模态过程半监督软测量建模。
