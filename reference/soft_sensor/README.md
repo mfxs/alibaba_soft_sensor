@@ -83,3 +83,6 @@
 
 + **Mixture Semisupervised Principal Component Regression Model and Soft Sensor Application**
 > 传统的半监督概率PCR方法同时考虑有标签样本输入输出的联合似然和无标签样本输入的似然，通过最大化两部分似然函数之和对模型参数进行求解，因而能够同时使用有标签数据和无标签数据。混合半监督概率PCR在此基础上引入多个PCR模型，将多个PCR模型的加权输出作为结果，所采用的损失函数和之前一样，采用EM算法进行求解，适用于非线性、多模态过程半监督软测量建模。
+ 
++ **Nonlinear industrial soft sensor development based on semi-supervised probabilistic mixture of extreme learning machines**
+> 提出了一种使用概率混合ELM的半监督软测量算法，通过多个子ELM模型解决复杂非线性问题，每个样本对不同子ELM模型有不同的隶属度，最终使用VBEM对模型参数进行概率求解，推理时也融合了多个子ELM模型的预测结果。
