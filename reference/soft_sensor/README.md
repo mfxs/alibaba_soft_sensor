@@ -89,3 +89,6 @@
 
 + **Semisupervised Bayesian Method for Soft Sensor Modeling with Unlabeled Data Samples**
 > 在PCR的概率生成框架下，通过最大化有标签样本输入输出的联合似然和无标签样本输入的似然，实现半监督软测量建模。为了更方便地选择所提取潜变量个数，即降维后维度，引入贝叶斯正则项控制模型的复杂度，最终通过EM算法进行求解。
+
++ **Semisupervised learning for probabilistic partial least squares regression model and soft sensor application**
+> 基于概率PLS建立半监督的软测量模型，概率PLS的模型构建和求解过程与概率PCR基本一样，不同之处在于概率PLS提取的主成分一部分用于解释质量变量，另一部分用于解释自身信息，通过最大化有标签样本输入输出的联合似然和无标签样本输入的似然，最终利用EM算法进行求解得到模型参数。
