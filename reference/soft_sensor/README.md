@@ -92,3 +92,6 @@
 
 + **Semisupervised learning for probabilistic partial least squares regression model and soft sensor application**
 > 基于概率PLS建立半监督的软测量模型，概率PLS的模型构建和求解过程与概率PCR基本一样，不同之处在于概率PLS提取的主成分一部分用于解释质量变量，另一部分用于解释自身信息，通过最大化有标签样本输入输出的联合似然和无标签样本输入的似然，最终利用EM算法进行求解得到模型参数。
+
++ **Semi-supervised selective ensemble learning based on distance to model for nonlinear soft sensor development**
+> 提出一种基于DM的半监督选择性集成软测量模型。首先利用滑窗和预测误差是否发生显著性差异来划分不同状态段，在每个状态段内采用LS-SVR建立软测量模型；当获取到新的预测样本时，将其前后一段时间内的样本作为一个整体，和每个状态段的数据（包括有标签和无标签数据）计算相似度指标DM，即和每个子模型的匹配度，在归一化和阈值筛选后作为似然概率；最终基于贝叶斯后验概率计算公式，融合满足阈值要求的子模型的预测结果。
