@@ -95,3 +95,6 @@
 
 + **Semi-supervised selective ensemble learning based on distance to model for nonlinear soft sensor development**
 > 提出一种基于DM的半监督选择性集成软测量模型。首先利用滑窗和预测误差是否发生显著性差异来划分不同状态段，在每个状态段内采用LS-SVR建立软测量模型；当获取到新的预测样本时，将其前后一段时间内的样本作为一个整体，和每个状态段的数据（包括有标签和无标签数据）计算相似度指标DM，即和每个子模型的匹配度，在归一化和阈值筛选后作为似然概率；最终基于贝叶斯后验概率计算公式，融合满足阈值要求的子模型的预测结果。
+
++ **Soft-Sensor Development for Processes With Multiple Operating Modes Based on Semisupervised Gaussian Mixture Regression**
+> GMR采用高斯混合分布来描述输入输出的联合概率分布，为了引入无标签样本信息，在极大似然时加入输入的边际分布，通过EM算法对模型参数进行求解。为了优化高斯元个数，采用BIC指标进行优化选择。
